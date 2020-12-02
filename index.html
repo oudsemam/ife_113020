@@ -1,19 +1,19 @@
-<!DOCTYPE html> <!---lets us know what we are writing, knows it is html vs xml--->
-<html lang="en"> <!---always add lang for language --->
-    <head> <!--- always has a head tag and then body tag regardless of the webpage-->
-        <meta charset="UTF-8"/> <!---charater set, font book for computers, self closing-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-        <link rel="preconnect" href="https://fonts.gstatic.com"><!--taken from fonts.google.com copied the link since html reads top to bottom put it above styles to keep it clean and simple-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Caladea&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css"> <!--rel is the relationship, href is the link to the file. control click the link to make sure. think tag links to the css tag, has to be in the head section, doesn't matter otherwise-->
-        <title>My Budget App</title> <!---what the user should see, in the new tab-->
+        <link rel="stylesheet" href="styles.css"> 
+        <title>My Budget App</title> 
     </head>
-    <body> <!---what you want to have on your webpage for everyone to see-->
-        <main><!--- main content of our website-->
-            <section id="monthly_budget_section"><!--use underscores to keep it as one ID otherwise spaces are more than one idea-->
-                <h1>Monthly budget:</h1><!-- most important header-->
-                <p id="monthly_budget"></p><!--paragraph-->
-                <form><!--needed along with input-->
+    <body> 
+        <main>
+            <section id="monthly_budget_section">
+                <h1>Monthly budget:</h1>
+                <p id="monthly_budget"></p>
+                <form>
                     <input type="number" id="income_input" placeholder="Montly income"/>
                     <button id="update_budget">Update budget</button>
                 </form>
@@ -43,6 +43,6 @@
                 <p id="remaining_balance"></p>
             </section>
         </main>
-        <script src="scripts.js"></script><!--always goes at the end of the html before body allows HTML to load first before javascript-->
+        <script src="scripts.js"></script>
     </body>
 </html>
