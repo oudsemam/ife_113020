@@ -17,7 +17,7 @@ addExpenseButton.onclick = addExpense
 
 // variables
 let monthlyIncome = 0;
-let expenses = []; //empty array, let javascript know it will an array but nothing is in it right now.
+let expenses = [];
 let expenseTotal = 0;
 let balance = 0;
 
@@ -27,8 +27,6 @@ console.log(expenseTotal);
 //fuction
 function updateBudget(event) {
     event.preventDefault(); 
-    //this prevents whatever the defalt is, for buttons it is submit
-    // console.log("I was clicked");
     monthlyIncome = incomeInput.value;
     monthlyBudget.innerText = "$" + monthlyIncome;
     incomeInput.value = "";
